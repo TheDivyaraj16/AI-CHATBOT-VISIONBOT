@@ -1,7 +1,7 @@
 let prompt=document.querySelector("#prompt")
 let chatContainer=document.querySelector(".chat-container")
 
-const Api_Url="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBMMraSqMq0V5fkVemqQzJLfb7Cz88hHMk"
+const Api_Url="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key="
 let user={
     data:null,
 
@@ -75,4 +75,5 @@ prompt.addEventListener("keydown",(e)=>{
     if(e.key=="Enter") {
         handlechatResponse(prompt.value)
     }
+
 })
